@@ -20,14 +20,16 @@ const Book = (props) => {
             <option value="">
               Move to...
             </option>
-            <option value="1">Currently Reading</option>
-            <option value="2">Want to Read</option>
-            <option value="3">Read</option>
+            <option value="currentlyReading">Currently Reading</option>
+            <option value="wantToRead">Want to Read</option>
+            <option value="read">Read</option>
           </select>
         </div>
       </div>
       <div className="book-title">{props.title}</div>
       <div className="book-authors">{props.author}</div>
+      <div className="id">{props.id}</div>
+
     </div>
   );
 };
